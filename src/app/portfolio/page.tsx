@@ -22,19 +22,20 @@ interface PortfolioType {
   [key: string]: unknown;
 }
 
+const isVideo = (src: string) => {
+  return src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.ogg');
+};
+
 const Portfolio = () => {
   const allPortfolio = (AllPortfolios as PortfolioType[]).map((project) => {
-    let featureSrc: string;
-    if (typeof project.images.feature === 'string') {
-      featureSrc = project.images.feature;
-    } else {
-      featureSrc = project.images.feature.src;
-    }
+    const feature = project.images.feature;
+    const featureSrc =
+      typeof feature === 'string' ? feature : feature?.src || '';
 
     return {
       title: project.title,
       subtitle: project.subtitle,
-      image: featureSrc,
+      media: featureSrc,
       link: `/portfolio/${project.slug}`,
     };
   });
@@ -79,17 +80,24 @@ const Portfolio = () => {
               transition={{ delay: 0.1 * i, duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <Image
-                src={
-                  project.image.startsWith('/assets')
-                    ? project.image
-                    : `/assets/${project.image}`
-                }
-                alt={project.title}
-                className="rounded-2xl w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                width={800}
-                height={600}
-              />
+              {isVideo(project.media) ? (
+                <video
+                  className="rounded-2xl w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  src={project.media}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              ) : (
+                <Image
+                  src={project.media}
+                  alt={project.title}
+                  className="rounded-2xl w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  width={800}
+                  height={600}
+                />
+              )}
               <h3 className="mt-8 text-sm md:text-sm text-[#DC143C] uppercase">
                 {project.title}
               </h3>
