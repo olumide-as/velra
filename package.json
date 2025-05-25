@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js"
+  
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
