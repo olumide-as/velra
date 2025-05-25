@@ -13,7 +13,6 @@ import CTASection from "@/components/CTASection";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 
 interface Project {
   title: string;
@@ -28,15 +27,22 @@ interface Project {
   };
 }
 
-const featuredProjects = AllPortfolios.slice(0, 4).map((project: Project) => ({
-  title: project.title,
-  subtitle: project.subtitle,
-  image:
-    typeof project.images.feature === "string"
-      ? project.images.feature
-      : project.images.feature.src,
-  link: `/portfolio/${project.slug}`,
-}));
+const isVideoFile = (src: string): boolean => {
+  return /\.(mp4|webm|ogg)$/i.test(src);
+};
+
+const featuredProjects = AllPortfolios.slice(0, 4).map((project: Project) => {
+  const feature = typeof project.images.feature === "string"
+    ? project.images.feature
+    : project.images.feature.src;
+
+  return {
+    title: project.title,
+    subtitle: project.subtitle,
+    image: feature,
+    link: `/portfolio/${project.slug}`,
+  };
+});
 
 const testimonials = AllPortfolios.map((project: Project) => ({
   name: project.testimonial.name,
@@ -170,7 +176,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        {/* Featured Portfolios */}
+         {/* Featured Portfolios */}
         <section className="bg-[#040404] text-white py-20">
           <div className="max-w-7xl mx-auto px-6 md:px-20">
             <motion.p
@@ -221,13 +227,24 @@ const Home: React.FC = () => {
                       }}
                       transition={{ duration: 0.7 }}
                     >
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        className="rounded-2xl w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        width={1200}
-                        height={800}
-                      />
+                      {isVideoFile(project.image) ? (
+                        <video
+                          src={project.image}
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          className="rounded-2xl w-full object-cover"
+                        />
+                      ) : (
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          className="rounded-2xl w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          width={1200}
+                          height={800}
+                        />
+                      )}
                       <h3 className="mt-8 text-sm text-[#DC143C] uppercase font-semibold">
                         {project.title}
                       </h3>
@@ -235,20 +252,6 @@ const Home: React.FC = () => {
                     </motion.a>
                   ))}
                 </div>
-
-                <motion.div
-                  className="mt-10 md:mt-16"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  viewport={{ once: true }}
-                >
-                  <Link href="/portfolio">
-                    <button className="uppercase w-full md:w-auto px-8 py-3 rounded-full text-white text-sm bg-gradient-to-r from-[#DC143C] to-[#570516] hover:opacity-90 transition duration-300">
-                      Explore All Projects
-                    </button>
-                  </Link>
-                </motion.div>
               </motion.div>
 
               {/* Right Column */}
@@ -277,13 +280,24 @@ const Home: React.FC = () => {
                     }}
                     transition={{ duration: 0.7 }}
                   >
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      className="rounded-2xl w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      width={1200}
-                      height={800}
-                    />
+                    {isVideoFile(project.image) ? (
+                      <video
+                        src={project.image}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="rounded-2xl w-full object-cover"
+                      />
+                    ) : (
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        className="rounded-2xl w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        width={1200}
+                        height={800}
+                      />
+                    )}
                     <h3 className="mt-8 text-sm text-[#DC143C] uppercase font-semibold">
                       {project.title}
                     </h3>

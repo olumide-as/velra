@@ -19,6 +19,12 @@ const fadeIn = {
   transition: { duration: 0.8, ease: "easeOut" },
 };
 
+const isVideo = (src: string) =>
+  src.endsWith(".mp4") || src.endsWith(".webm") || src.endsWith(".mov");
+
+const getMediaSrc = (input: string | { src: string }) =>
+  typeof input === "string" ? input : input.src;
+
 const PortfolioTemplate: React.FC<Props> = ({ project }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -43,9 +49,6 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
       behavior: "smooth",
     });
   };
-
-  const getImageSrc = (img: string | { src: string }) =>
-    typeof img === "string" ? img : img.src;
 
   return (
     <div>
@@ -97,7 +100,7 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
           {images?.cover && (
             <motion.div className="mt-16" {...fadeIn} viewport={{ once: true }}>
               <Image
-                src={getImageSrc(images.cover)}
+                src={getMediaSrc(images.cover)}
                 alt={`${title} cover`}
                 className="w-full object-cover max-h-[600px] rounded-xl"
                 width={1200}
@@ -129,7 +132,7 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
         >
           <div className="max-w-7xl mx-auto px-6 md:px-20">
             <Image
-              src={getImageSrc(images.wide)}
+              src={getMediaSrc(images.wide)}
               alt={`${title} wide`}
               className="w-full object-cover rounded-xl max-h-[600px]"
               width={1200}
@@ -150,7 +153,7 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
             {images.details.map((src, i) => (
               <Image
                 key={i}
-                src={getImageSrc(src)}
+                src={getMediaSrc(src)}
                 alt={`Detail ${i + 1}`}
                 className="w-full object-cover rounded-xl"
                 width={800}
@@ -206,26 +209,42 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
             ref={scrollRef}
             className="flex space-x-6 overflow-x-auto no-scrollbar py-4 scroll-smooth"
           >
-            {relatedProjects.map((p) => (
-              <motion.a
-                key={p.slug}
-                href={`/portfolio/${p.slug}`}
-                className="min-w-[300px] flex-shrink-0 group"
-                whileHover={{ scale: 1.03 }}
-              >
-                <Image
-                  src={getImageSrc(p.images.feature)}
-                  alt={p.title}
-                  className="rounded-2xl w-[350px] object-cover"
-                  width={350}
-                  height={200}
-                />
-                <h3 className="mt-8 text-sm text-[#DC143C] uppercase font-semibold">
-                  {p.title}
-                </h3>
-                <p className="text-sm text-white">{p.subtitle}</p>
-              </motion.a>
-            ))}
+            {relatedProjects.map((p) => {
+              const featureSrc = getMediaSrc(p.images.feature);
+              const video = isVideo(featureSrc);
+
+              return (
+                <motion.a
+                  key={p.slug}
+                  href={`/portfolio/${p.slug}`}
+                  className="min-w-[300px] flex-shrink-0 group"
+                  whileHover={{ scale: 1.03 }}
+                >
+                  {video ? (
+                    <video
+                      src={featureSrc}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="rounded-2xl w-[350px] h-[200px] object-cover"
+                    />
+                  ) : (
+                    <Image
+                      src={featureSrc}
+                      alt={p.title}
+                      className="rounded-2xl w-[350px] object-cover"
+                      width={350}
+                      height={200}
+                    />
+                  )}
+                  <h3 className="mt-8 text-sm text-[#DC143C] uppercase font-semibold">
+                    {p.title}
+                  </h3>
+                  <p className="text-sm text-white">{p.subtitle}</p>
+                </motion.a>
+              );
+            })}
           </div>
         </motion.section>
       )}

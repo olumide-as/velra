@@ -12,7 +12,7 @@ export const AllPortfolios = [
     whippedUp:
       "We created a timeless brand identity — elegant fonts, a dignified color palette, and a minimalist monogram that subtly reflects justice and balance. Their website was designed to communicate expertise, trust, and client success stories — with smooth navigation and mobile responsiveness at its core.",
     images: {
-      feature: "/assets/akande0.gif",
+      feature: "/assets/akande0.mp4",
       cover: "/assets/akande1.png",
       wide: "/assets/akande2.png",
       details: ["/assets/akande3.png", "/assets/akande4.png"],
@@ -36,7 +36,7 @@ export const AllPortfolios = [
     whippedUp:
       "We developed a professional website with clear service listings, case studies, and 3D visual elements that spoke to their industrial know-how. The layout was kept minimal but strong, communicating capability and trust.",
     images: {
-      feature: "/assets/extrude0.gif",
+      feature: "/assets/extrude0.mp4",
       cover: "/assets/extrude1.png",
       wide: "/assets/extrude2.png",
       details: ["/assets/extrude3.png", "/assets/extrude4.png"],
@@ -60,7 +60,7 @@ export const AllPortfolios = [
     whippedUp:
       "We developed a streamlined corporate website with structured service pages, project showcases, and investor-friendly visuals. A high-production-value promo video was also delivered, blending motion graphics with drone footage and real-time operations, communicating both capacity and credibility.",
     images: {
-      feature: "/assets/ime0.gif",
+      feature: "/assets/ime0.mp4",
       cover: "/assets/ime1.png",
       wide: "/assets/ime2.png",
       details: ["/assets/ime3.png", "/assets/ime4.png"],
@@ -84,7 +84,7 @@ export const AllPortfolios = [
     whippedUp:
       "We led a complete rebranding initiative for La Peritum, creating a modern, professional identity that reflects their vision of accessible legal excellence. From logo and brand guidelines to tone of voice, every detail was refined. We also designed and developed a sleek, user-focused website, and launched a strategic social media presence that positions them as a trusted voice in the legal sector. Branded marketing assets and curated visuals brought it all together.",
     images: {
-      feature: "/assets/laperitum0.gif",
+      feature: "/assets/laperitum0.mp4",
       cover: "/assets/laperitum1.png",
       wide: "/assets/laperitum2.png",
       details: ["/assets/laperitum3.png", "/assets/laperitum4.png"],
@@ -108,7 +108,7 @@ export const AllPortfolios = [
     whippedUp:
       "We crafted a vibrant and modern brand identity that channeled energy, color, and street-smart typography. The website was structured to showcase billboard portfolios, booking processes, and campaign highlights. On social media, we curated a bold visual voice — mixing urban imagery with motion content to drive visibility and inquiries.",
     images: {
-      feature: "/assets/mamedia0.gif",
+      feature: "/assets/mamedia0.mp4",
       cover: "/assets/mamedia1.png",
       wide: "/assets/mamedia2.png",
      details: ["/assets/mamedia3.png", "/assets/mamedia4.png"],
@@ -132,7 +132,7 @@ export const AllPortfolios = [
     whippedUp:
       "We created a bold brand identity with sharp lines and dynamic elements, inspired by combat motion. The website included fighter registrations, event updates, and a content-driven CMS. Social content focused on athlete highlights, promo videos, and community engagement — all designed to build hype and legitimacy.",
     images: {
-      feature: "/assets/nmmaf0.gif",
+      feature: "/assets/nmmaf0.mp4",
       cover: "/assets/nmmaf1.png",
       wide: "/assets/nmmaf2.png",
       details: ["/assets/nmmaf3.png", "/assets/nmmaf4.png"],
@@ -156,7 +156,7 @@ export const AllPortfolios = [
     whippedUp:
       "We delivered a sleek, modern website highlighting Quadloop’s solar solutions and sustainability mission. Custom illustrations, smooth scroll effects, and clean iconography gave the site a startup edge without compromising professionalism.",
     images: {
-      feature: "/assets/quadloop0.gif",
+      feature: "/assets/quadloop0.mp4",
       cover: "/assets/quadloop1.png",
       wide: "/assets/quadloop2.png",
       details: ["/assets/quadloop3.png", "/assets/quadloop4.png"],
