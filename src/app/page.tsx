@@ -147,12 +147,12 @@ const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <p className="text-sm uppercase text-[#DC143C] mb-3">
+              <h2 className="text-sm uppercase text-[#DC143C] mb-3">
                 About Velra
-              </p>
-              <h2 className="text-2xl md:text-3xl mb-12 text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
-                Vibes. Vision. Voice.
               </h2>
+              <h3 className="text-2xl md:text-3xl mb-12 text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
+                Vibes. Vision. Voice.
+              </h3>
               <p className="mb-5 text-gray-800">
                 From brand identities to immersive experiences, everything we do
                 is designed to leave a mark. We believe great work starts with

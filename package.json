@@ -5,14 +5,15 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "NODE_ENV=production node server.js"
-  
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "antd": "^5.25.2",
     "framer-motion": "^12.12.2",
     "next": "15.3.2",
+    "next-sitemap": "^4.2.3",
     "nodemailer": "^7.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

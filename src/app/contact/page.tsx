@@ -90,6 +90,8 @@ const Contact = () => {
           name="description"
           content="Let’s talk ideas! Reach out to Velra for branding, design, web, or digital marketing support. Start your creative journey with us today."
         />
+          <link rel="canonical" href="https://madebyvelra.com/contact" />
+
       </Head>
 
       <motion.section
