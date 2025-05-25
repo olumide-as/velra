@@ -16,6 +16,27 @@ import Script from "next/script";
 export const metadata = {
   title: "Velra — Branding, Web Design & Strategy Studio",
   description: "Creative agency crafting bold branding, standout design, engaging websites, and smart digital marketing for modern startups and growing brands.",
+    openGraph: {
+    title: "Velra — Branding, Web Design & Strategy Studio",
+    description: "Creative branding, design, and digital growth made bold.",
+    url: "https://madebyvelra.com",
+    siteName: "Velra",
+    images: [
+      {
+        url: "/assets/meta-image.png", // ✅ Put this image in /public/assets/
+        width: 1200,
+        height: 630,
+        alt: "Velra branding preview",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Velra — Branding, Web Design & Strategy Studio",
+    description: "Creative branding, design, and digital growth made bold.",
+    images: ["/assets/meta-image.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
