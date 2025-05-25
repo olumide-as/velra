@@ -15,7 +15,7 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Velra — Branding, Web Design & Strategy Studio",
-  description: "Your global site description here...",
+  description: "Creative agency crafting bold branding, standout design, engaging websites, and smart digital marketing for modern startups and growing brands.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
