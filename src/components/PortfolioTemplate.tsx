@@ -25,6 +25,12 @@ const isVideo = (src: string) =>
 const getMediaSrc = (input: string | { src: string }) =>
   typeof input === "string" ? input : input.src;
 
+// Helper to get poster image path for a video (replace extension with .png)
+const getPosterSrc = (videoSrc: string) => {
+  if (!isVideo(videoSrc)) return "";
+  return videoSrc.replace(/\.(mp4|webm|mov)$/, ".png");
+};
+
 const PortfolioTemplate: React.FC<Props> = ({ project }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -57,6 +63,7 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
           src={heroVideo}
+          poster={getPosterSrc(heroVideo)}
           autoPlay
           muted
           loop
@@ -212,6 +219,7 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
             {relatedProjects.map((p) => {
               const featureSrc = getMediaSrc(p.images.feature);
               const video = isVideo(featureSrc);
+              const poster = getPosterSrc(featureSrc);
 
               return (
                 <motion.a
@@ -223,6 +231,7 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
                   {video ? (
                     <video
                       src={featureSrc}
+                      poster={poster}
                       autoPlay
                       muted
                       loop

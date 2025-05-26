@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://madebyvelra.com
+
+# Sitemaps
+Sitemap: https://madebyvelra.com/sitemap.xml

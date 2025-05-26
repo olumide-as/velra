@@ -49,7 +49,7 @@ const Terms = () => {
           <ul className="list-disc pl-6">
             <li>Due within 7–14 days</li>
             <li>Late fees may apply</li>
-            <li>Prices quoted in GBP, NGN, or USD</li>
+            <li>Prices quoted in GBP</li>
           </ul>
 
           <h3 className="text-white text-xl font-semibold">5. Intellectual Property</h3>
@@ -78,7 +78,7 @@ const Terms = () => {
           </ul>
 
           <h3 className="text-white text-xl font-semibold">10. Legal Jurisdiction</h3>
-          <p>Governed by UK or Nigerian law. Disputes will be handled locally.</p>
+          <p>Governed by UK. Disputes will be handled locally.</p>
 
           <p>Questions? Email: <a href="mailto:hello@madebyvelra.com" className="text-[#DC143C]">hello@madebyvelra.com</a></p>
         </div>

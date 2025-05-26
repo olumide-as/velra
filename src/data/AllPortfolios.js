@@ -16,6 +16,7 @@ export const AllPortfolios = [
       cover: "/assets/akande1.png",
       wide: "/assets/akande2.png",
       details: ["/assets/akande3.png", "/assets/akande4.png"],
+      poster: "/assets/akandebg.png",
     },
     testimonial: {
       quote:
@@ -40,6 +41,7 @@ export const AllPortfolios = [
       cover: "/assets/extrude1.png",
       wide: "/assets/extrude2.png",
       details: ["/assets/extrude3.png", "/assets/extrude4.png"],
+      poster: "/assets/extrudebg.png",
     },
     testimonial: {
       quote:
@@ -64,6 +66,7 @@ export const AllPortfolios = [
       cover: "/assets/ime1.png",
       wide: "/assets/ime2.png",
       details: ["/assets/ime3.png", "/assets/ime4.png"],
+      poster: "/assets/imebg.png",
     },
     testimonial: {
       quote:
@@ -88,6 +91,7 @@ export const AllPortfolios = [
       cover: "/assets/laperitum1.png",
       wide: "/assets/laperitum2.png",
       details: ["/assets/laperitum3.png", "/assets/laperitum4.png"],
+      poster: "/assets/laperitumbg.png",
     },
     testimonial: {
       quote:
@@ -111,7 +115,8 @@ export const AllPortfolios = [
       feature: "/assets/mamedia0.mp4",
       cover: "/assets/mamedia1.png",
       wide: "/assets/mamedia2.png",
-     details: ["/assets/mamedia3.png", "/assets/mamedia4.png"],
+      details: ["/assets/mamedia3.png", "/assets/mamedia4.png"],
+      poster: "/assets/mamediabg.png",
     },
     testimonial: {
       quote:
@@ -136,6 +141,7 @@ export const AllPortfolios = [
       cover: "/assets/nmmaf1.png",
       wide: "/assets/nmmaf2.png",
       details: ["/assets/nmmaf3.png", "/assets/nmmaf4.png"],
+      poster: "/assets/nmmafbg.png",
     },
     testimonial: {
       quote:
@@ -160,6 +166,7 @@ export const AllPortfolios = [
       cover: "/assets/quadloop1.png",
       wide: "/assets/quadloop2.png",
       details: ["/assets/quadloop3.png", "/assets/quadloop4.png"],
+      poster: "/assets/quadloopbg.png",
     },
     testimonial: {
       quote:

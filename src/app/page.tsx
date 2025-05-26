@@ -64,13 +64,11 @@ const Home: React.FC = () => {
       <div>
         {/* Hero Section */}
         <section className="relative w-full h-screen overflow-hidden">
-          <video
+          <Image
+            src="/assets/herobg.png"
+            alt="Velra Hero Background"
+            fill
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
-            src="/assets/herobg.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
           />
           <div className="relative z-10 flex items-center w-full h-full bg-opacity-50">
             <div className="w-full max-w-7xl mx-auto px-6 md:px-20">
@@ -176,138 +174,140 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-         {/* Featured Portfolios */}
-        <section className="bg-[#040404] text-white py-20">
-          <div className="max-w-7xl mx-auto px-6 md:px-20">
-            <motion.p
-              className="text-sm uppercase text-[#DC143C] mb-3"
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
+{/* Featured Portfolios */}
+<section className="bg-[#040404] text-white py-20">
+  <div className="max-w-7xl mx-auto px-6 md:px-20">
+    <motion.p
+      className="text-sm uppercase text-[#DC143C] mb-3"
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
+      Featured Portfolios
+    </motion.p>
+
+    <motion.h2
+      className="text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.1 }}
+      viewport={{ once: true }}
+    >
+      Cool stuff we’ve cooked up
+    </motion.h2>
+
+    <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-x-10 gap-y-16">
+      {/* Left Column */}
+      <motion.div
+        className="flex flex-col justify-between space-y-16 md:space-y-0"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.2,
+            },
+          },
+        }}
+      >
+        <div className="space-y-16">
+          {featuredProjects.slice(0, 2).map((project, i) => (
+            <motion.a
+              key={i}
+              href={project.link}
+              className="block group"
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              transition={{ duration: 0.7 }}
             >
-              Featured Portfolios
-            </motion.p>
+              {isVideoFile(project.image) ? (
+                <video
+                  src={project.image}
+                  poster={project.image.replace(/\.(mp4|webm|ogg)$/, '.png')}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="rounded-2xl w-full object-cover"
+                />
+              ) : (
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  className="rounded-2xl w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  width={1200}
+                  height={800}
+                />
+              )}
+              <h3 className="mt-8 text-sm text-[#DC143C] uppercase font-semibold">
+                {project.title}
+              </h3>
+              <p className="text-md md:text-lg">{project.subtitle}</p>
+            </motion.a>
+          ))}
+        </div>
+      </motion.div>
 
-            <motion.h2
-              className="text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"
-              initial={{ opacity: 0, y: -20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              Cool stuff we’ve cooked up
-            </motion.h2>
-
-            <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-x-10 gap-y-16">
-              {/* Left Column */}
-              <motion.div
-                className="flex flex-col justify-between space-y-16 md:space-y-0"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={{
-                  hidden: {},
-                  visible: {
-                    transition: {
-                      staggerChildren: 0.2,
-                    },
-                  },
-                }}
-              >
-                <div className="space-y-16">
-                  {featuredProjects.slice(0, 2).map((project, i) => (
-                    <motion.a
-                      key={i}
-                      href={project.link}
-                      className="block group"
-                      variants={{
-                        hidden: { opacity: 0, y: 30 },
-                        visible: { opacity: 1, y: 0 },
-                      }}
-                      transition={{ duration: 0.7 }}
-                    >
-                      {isVideoFile(project.image) ? (
-                        <video
-                          src={project.image}
-                          autoPlay
-                          muted
-                          loop
-                          playsInline
-                          className="rounded-2xl w-full object-cover"
-                        />
-                      ) : (
-                        <Image
-                          src={project.image}
-                          alt={project.title}
-                          className="rounded-2xl w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                          width={1200}
-                          height={800}
-                        />
-                      )}
-                      <h3 className="mt-8 text-sm text-[#DC143C] uppercase font-semibold">
-                        {project.title}
-                      </h3>
-                      <p className="text-md md:text-lg">{project.subtitle}</p>
-                    </motion.a>
-                  ))}
-                </div>
-              </motion.div>
-
-              {/* Right Column */}
-              <motion.div
-                className="space-y-16 mt-12 md:mt-32"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={{
-                  hidden: {},
-                  visible: {
-                    transition: {
-                      staggerChildren: 0.2,
-                    },
-                  },
-                }}
-              >
-                {featuredProjects.slice(2, 4).map((project, i) => (
-                  <motion.a
-                    key={i}
-                    href={project.link}
-                    className="block group"
-                    variants={{
-                      hidden: { opacity: 0, y: 30 },
-                      visible: { opacity: 1, y: 0 },
-                    }}
-                    transition={{ duration: 0.7 }}
-                  >
-                    {isVideoFile(project.image) ? (
-                      <video
-                        src={project.image}
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="rounded-2xl w-full object-cover"
-                      />
-                    ) : (
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        className="rounded-2xl w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        width={1200}
-                        height={800}
-                      />
-                    )}
-                    <h3 className="mt-8 text-sm text-[#DC143C] uppercase font-semibold">
-                      {project.title}
-                    </h3>
-                    <p className="text-md md:text-lg">{project.subtitle}</p>
-                  </motion.a>
-                ))}
-              </motion.div>
-            </div>
-          </div>
-        </section>
+      {/* Right Column */}
+      <motion.div
+        className="space-y-16 mt-12 md:mt-32"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: {
+              staggerChildren: 0.2,
+            },
+          },
+        }}
+      >
+        {featuredProjects.slice(2, 4).map((project, i) => (
+          <motion.a
+            key={i}
+            href={project.link}
+            className="block group"
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.7 }}
+          >
+            {isVideoFile(project.image) ? (
+              <video
+                src={project.image}
+                poster={project.image.replace(/\.(mp4|webm|ogg)$/, '.png')}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="rounded-2xl w-full object-cover"
+              />
+            ) : (
+              <Image
+                src={project.image}
+                alt={project.title}
+                className="rounded-2xl w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                width={1200}
+                height={800}
+              />
+            )}
+            <h3 className="mt-8 text-sm text-[#DC143C] uppercase font-semibold">
+              {project.title}
+            </h3>
+            <p className="text-md md:text-lg">{project.subtitle}</p>
+          </motion.a>
+        ))}
+      </motion.div>
+    </div>
+  </div>
+</section>
 
         {/* Services */}
         <ServicesSection />

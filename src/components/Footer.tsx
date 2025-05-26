@@ -73,6 +73,7 @@ const Footer: React.FC = () => {
                 EC1N 8DX
               </p>
             </div>
+            {/* Nigeria Address (commented out for now) 
             <div className="text-gray-400">
               <p className="font-semibold text-white">Nigeria</p>
               <p>
@@ -80,6 +81,7 @@ const Footer: React.FC = () => {
                 Lagos
               </p>
             </div>
+            */}
           </div>
         </motion.div>
       </div>
