@@ -177,7 +177,7 @@ const Home: React.FC = () => {
 {/* Featured Portfolios */}
 <section className="bg-[#040404] text-white py-20">
   <div className="max-w-7xl mx-auto px-6 md:px-20">
-    <motion.p
+    <motion.h2
       className="text-sm uppercase text-[#DC143C] mb-3"
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -185,9 +185,9 @@ const Home: React.FC = () => {
       viewport={{ once: true }}
     >
       Featured Portfolios
-    </motion.p>
+    </motion.h2>
 
-    <motion.h2
+    <motion.h3
       className="text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -195,7 +195,7 @@ const Home: React.FC = () => {
       viewport={{ once: true }}
     >
       Cool stuff we’ve cooked up
-    </motion.h2>
+    </motion.h3>
 
     <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-x-10 gap-y-16">
       {/* Left Column */}
@@ -318,7 +318,7 @@ const Home: React.FC = () => {
         {/* Testimonials */}
         <section className="bg-[#040404] text-white py-24 px-6">
           <div className="max-w-7xl mx-auto md:px-20">
-            <motion.p
+            <motion.h2
               className="text-sm uppercase text-[#DC143C] mb-3"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -326,9 +326,9 @@ const Home: React.FC = () => {
               viewport={{ once: true }}
             >
               Testimonials
-            </motion.p>
+            </motion.h2>
 
-            <motion.h2
+            <motion.h3
               className="text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -336,7 +336,7 @@ const Home: React.FC = () => {
               viewport={{ once: true }}
             >
               What Our Clients Say
-            </motion.h2>
+            </motion.h3>
 
             <Swiper
               modules={[Autoplay]}

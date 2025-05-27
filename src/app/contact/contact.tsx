@@ -120,9 +120,9 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <div className="text-left space-y-6 max-w-xl md:pr-20">
-              <h2 className="text-3xl">
+              <h1 className="text-3xl">
                 Let’s Build Something <br /> Amazing Together
-              </h2>
+              </h1>
               <p className="text-lg text-gray-400">
                 We are excited to hear about your ideas and help you bring them
                 to life!

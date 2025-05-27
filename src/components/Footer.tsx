@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
         <motion.div variants={fadeUp} custom={1} className="space-y-4 order-last lg:order-none">
           <h3 className="text-lg md:text-xl">Say Hey, Don&apos;t be Shy</h3>
           <div className="text-sm">
-            <p>hello@madebyvelra.com</p>
+            <p>hello@velra.co.uk</p>
             <p>+44 203 432 2577</p>
             <div className="flex gap-4 pt-2">
               <a href="https://www.instagram.com/madebyvelra/" target="_blank" rel="noreferrer">

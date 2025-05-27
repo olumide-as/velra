@@ -80,7 +80,7 @@ const Terms = () => {
           <h3 className="text-white text-xl font-semibold">10. Legal Jurisdiction</h3>
           <p>Governed by UK. Disputes will be handled locally.</p>
 
-          <p>Questions? Email: <a href="mailto:hello@madebyvelra.com" className="text-[#DC143C]">hello@madebyvelra.com</a></p>
+          <p>Questions? Email: <a href="mailto:hello@velra.co.uk" className="text-[#DC143C]">hello@velra.co.uk</a></p>
         </div>
       </section>
 

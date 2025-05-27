@@ -44,10 +44,10 @@ const Client: React.FC = () => {
       variants={containerVariants}
     >
       <div className="max-w-7xl mx-auto md:px-20">
-        <p className="text-sm uppercase text-[#DC143C] mb-3">Clients</p>
-        <h2 className="text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1">
+        <h2 className="text-sm uppercase text-[#DC143C] mb-3">Clients</h2>
+        <h3 className="text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1">
           Made with, Made for
-        </h2>
+        </h3>
 
         <motion.div
           className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center mt-12"

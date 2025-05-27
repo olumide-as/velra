@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: "Velra — Branding, Web Design & Strategy Studio",
     description: "Creative branding, design, and digital growth made bold.",
-    url: "https://madebyvelra.com",
+    url: "https://velra.co.uk",
     siteName: "Velra",
     images: [
       {

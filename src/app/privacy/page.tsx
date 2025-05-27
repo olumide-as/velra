@@ -63,7 +63,7 @@ const Privacy = () => {
           </ul>
 
           <h3 className="text-white text-xl font-semibold">6. Your Rights</h3>
-          <p>You may request access, updates, deletion, or withdraw consent by emailing: <a href="mailto:hello@madebyvelra.com" className="text-[#DC143C]">hello@madebyvelra.com</a></p>
+          <p>You may request access, updates, deletion, or withdraw consent by emailing: <a href="mailto:hello@velra.co.uk" className="text-[#DC143C]">hello@velra.co.uk</a></p>
 
           <h3 className="text-white text-xl font-semibold">7. Updates to Policy</h3>
           <p>We may update this policy from time to time. Please check back for the latest version.</p>

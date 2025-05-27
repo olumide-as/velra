@@ -54,7 +54,7 @@ const Portfolio = () => {
       viewport={{ once: true }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-20">
-        <motion.p
+        <motion.h1
           className="text-sm uppercase text-[#DC143C] mb-3"
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -62,7 +62,7 @@ const Portfolio = () => {
           viewport={{ once: true }}
         >
           Our Portfolio
-        </motion.p>
+        </motion.h1>
 
         <motion.h2
           className="text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"

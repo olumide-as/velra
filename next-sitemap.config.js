@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://madebyvelra.com', // replace with your domain
+  siteUrl: 'https://velra.co.uk', // replace with your domain
   generateRobotsTxt: true,
   changefreq: 'monthly',
   priority: 0.7,

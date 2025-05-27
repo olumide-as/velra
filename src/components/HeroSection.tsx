@@ -36,23 +36,23 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <motion.h2
+        <motion.h1
           className="text-sm uppercase text-[#DC143C] mb-3"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
         >
           {eyebrow}
-        </motion.h2>
+        </motion.h1>
 
-        <motion.p
+        <motion.h2
           className="text-2xl md:text-3xl lg:text-4xl font-light leading-snug"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.7 }}
         >
           {heading}
-        </motion.p>
+        </motion.h2>
 
         <motion.p
           className="mt-6 text-md md:text-md lg:text-lg font-light leading-snug max-w-2xl"

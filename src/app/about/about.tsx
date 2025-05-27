@@ -17,9 +17,9 @@ const About = () => {
     <div>
       <HeroSection
         background="/assets/servicesherobg.png"
-        eyebrow="Design Meets Meaning"
-        heading="Great design isn’t just what you see — it’s what you feel."
-        subtext="At Velra, we turn ideas into experiences by blending creativity with strategy, giving every brand a voice, purpose, and presence that goes beyond aesthetics."
+        eyebrow="Our Story, In Color"
+        heading="Helping small teams make big impressions."
+        subtext="Velra is a creative agency partnering with startups and small teams to build brands, websites, and content that truly connect. We combine thoughtful strategy with standout design to turn ideas into impact."
       />
 
       <section className="bg-[#040404] py-16">

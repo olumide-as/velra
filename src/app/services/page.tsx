@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Explore our creative services — from branding and design to web development and digital marketing. Custom solutions built for your brand’s success.",
   alternates: {
-    canonical: "https://madebyvelra.com/services",
+    canonical: "https://velra.co.uk/services",
   },
 };
 

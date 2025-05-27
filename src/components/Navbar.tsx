@@ -221,12 +221,12 @@ const Navbar: React.FC = () => {
             <h2 className="text-2xl md:text-3xl font-semibold text-[#DC143C] border-b border-[#DC143C] inline-block pb-1">
               Careers
             </h2>
-            <p>careers@madebyvelra.com</p>
+            <p>careers@velra.co.uk</p>
             <p>+44 203 432 2577</p>
 
             <div className="flex justify-center md:justify-start space-x-6 mt-4 text-[#DC143C] text-2xl">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/madebyvelra/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-300"
@@ -234,7 +234,7 @@ const Navbar: React.FC = () => {
                 <FaInstagram />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/madebyvelra"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-300"
@@ -242,7 +242,7 @@ const Navbar: React.FC = () => {
                 <FaXTwitter />
               </a>
               <a
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@madebyvelra"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-300"

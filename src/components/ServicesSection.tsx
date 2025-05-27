@@ -59,10 +59,10 @@ const ServicesSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <p className="text-sm uppercase text-[#DC143C] mb-3">What we do</p>
-          <h2 className="text-2xl md:text-3xl mb-12 text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
+          <h2 className="text-sm uppercase text-[#DC143C] mb-3">What we do</h2>
+          <h3 className="text-2xl md:text-3xl mb-12 text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
             The Velra Vibe, Explained
-          </h2>
+          </h3>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-16">
