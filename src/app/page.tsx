@@ -65,7 +65,7 @@ const Home: React.FC = () => {
         {/* Hero Section */}
         <section className="relative w-full h-screen overflow-hidden">
           <Image
-            src="/assets/herobg.png"
+            src="/assets/herobg.webp"
             alt="Velra Hero Background"
             fill
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -122,7 +122,7 @@ const Home: React.FC = () => {
               transition={{ duration: 0.8 }}
             >
               <Image
-                src="/assets/about4.jpg"
+                src="/assets/about4.webp"
                 alt="Our team working"
                 className="object-cover w-full lg:absolute h-80 lg:h-full grayscale"
                 width={1200}
@@ -228,7 +228,7 @@ const Home: React.FC = () => {
               {isVideoFile(project.image) ? (
                 <video
                   src={project.image}
-                  poster={project.image.replace(/\.(mp4|webm|ogg)$/, '.png')}
+                  poster={project.image.replace(/\.(mp4|webm|ogg)$/, '.webp')}
                   autoPlay
                   muted
                   loop
@@ -282,7 +282,7 @@ const Home: React.FC = () => {
             {isVideoFile(project.image) ? (
               <video
                 src={project.image}
-                poster={project.image.replace(/\.(mp4|webm|ogg)$/, '.png')}
+                poster={project.image.replace(/\.(mp4|webm|ogg)$/, '.webp')}
                 autoPlay
                 muted
                 loop

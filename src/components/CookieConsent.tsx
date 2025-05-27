@@ -26,7 +26,7 @@ export default function CookieConsent() {
   if (!hasMounted || consent !== null) return null;
 
   return (
-    <div className="fixed inset-0  z-50 flex items-center justify-center">
+    <div className="fixed inset-0 mt-100 z-50 flex items-center justify-center">
       <div className="bg-[#040404] border border-[#DC143C] rounded-xl p-8 max-w-lg w-full text-center shadow-lg space-y-6">
         <p className="text-white text-sm md:text-base leading-relaxed">
           We use cookies to enhance your experience, analyze site usage, and offer tailored content. Click “Accept” to allow cookies or “Decline” to opt out of non-essential ones.
@@ -34,7 +34,7 @@ export default function CookieConsent() {
         <div className="flex justify-center gap-4">
           <button
             onClick={decline}
-            className="px-6 py-2 rounded-full border border-[#DC143C] text-[#DC143C] hover:bg-[#DC143C] hover:text-white transition"
+            className="px-6 py-2 rounded-full border border-white text-white hover:bg-[#DC143C] hover:text-white transition"
           >
             Decline
           </button>

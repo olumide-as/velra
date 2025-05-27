@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, ChangeEvent, FormEvent } from "react";
-import Head from "next/head";
+import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -23,11 +22,13 @@ const Contact = () => {
     captchaAnswer: "",
   });
 
-  const [captcha, setCaptcha] = useState(() => {
-    const a = Math.floor(Math.random() * 10);
-    const b = Math.floor(Math.random() * 10);
-    return { a, b, result: a + b };
-  });
+const [captcha, setCaptcha] = useState<{ a: number; b: number; result: number } | null>(null);
+
+useEffect(() => {
+  const a = Math.floor(Math.random() * 10);
+  const b = Math.floor(Math.random() * 10);
+  setCaptcha({ a, b, result: a + b });
+}, []);
 
   const [loading, setLoading] = useState(false);
 
@@ -41,10 +42,10 @@ const Contact = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (parseInt(formData.captchaAnswer) !== captcha.result) {
-      toast.error("Incorrect anti-spam answer");
-      return;
-    }
+if (!captcha || parseInt(formData.captchaAnswer) !== captcha.result) {
+  toast.error("Incorrect anti-spam answer");
+  return;
+}
 
     setLoading(true);
 
@@ -85,14 +86,7 @@ const Contact = () => {
 
   return (
     <>
-      <Head>
-        <title>Contact Us | Velra</title>
-        <meta
-          name="description"
-          content="Let’s talk ideas! Reach out to Velra for branding, design, web, or digital marketing support. Start your creative journey with us today."
-        />
-        <link rel="canonical" href="https://madebyvelra.com/contact" />
-      </Head>
+
 
       <motion.section
         className="relative min-h-screen w-full overflow-hidden"
@@ -101,7 +95,7 @@ const Contact = () => {
         transition={{ duration: 0.6 }}
       >
         <Image
-          src="/assets/contactsbg.png"
+          src="/assets/contactsbg.webp"
           alt="Contact Background"
           fill
           className="absolute top-0 left-0 object-cover z-0"
@@ -179,22 +173,24 @@ const Contact = () => {
                 </div>
 
                 {/* Anti-Spam Math Captcha */}
-                <div className="mb-6">
-                  <label
-                    htmlFor="captchaAnswer"
-                    className="block text-sm font-medium text-white"
-                  >
-                    Quick vibe check ✅: What is {captcha.a} + {captcha.b}?
-                  </label>
-                  <input
-                    type="number"
-                    name="captchaAnswer"
-                    value={formData.captchaAnswer}
-                    onChange={handleChange}
-                    className="w-full p-3 bg-[#333333] text-white border-b-2 border-[#DC143C] focus:outline-none"
-                    required
-                  />
-                </div>
+{captcha && (
+  <div className="mb-6">
+    <label
+      htmlFor="captchaAnswer"
+      className="block text-sm font-medium text-white"
+    >
+      Quick vibe check ✅: What is {captcha.a} + {captcha.b}?
+    </label>
+    <input
+      type="number"
+      name="captchaAnswer"
+      value={formData.captchaAnswer}
+      onChange={handleChange}
+      className="w-full p-3 bg-[#333333] text-white border-b-2 border-[#DC143C] focus:outline-none"
+      required
+    />
+  </div>
+)}
 
                 <div className="text-center">
                   <button

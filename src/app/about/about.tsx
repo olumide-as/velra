@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -9,14 +9,14 @@ import CTASection from "@/components/CTASection";
 
 const About = () => {
   const images = {
-    wide: "/assets/about1.jpg",
-    details: ["/assets/about2.jpg", "/assets/about3.jpg"],
+    wide: "/assets/about1.webp",
+    details: ["/assets/about2.webp", "/assets/about3.webp"],
   };
 
   return (
     <div>
       <HeroSection
-        background="/assets/servicesherobg.png"
+        background="/assets/servicesherobg.webp"
         eyebrow="Our Story, In Color"
         heading="Helping small teams make big impressions."
         subtext="Velra is a creative agency partnering with startups and small teams to build brands, websites, and content that truly connect. We combine thoughtful strategy with standout design to turn ideas into impact."
@@ -29,13 +29,15 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
+            className="relative w-full max-h-[600px] rounded-xl overflow-hidden"
+            style={{ aspectRatio: "1200 / 600" }} // 2:1 ratio
           >
             <Image
               src={images.wide}
               alt="About wide showcase"
-              className="w-full object-cover rounded-xl max-h-[600px]"
-              width={1200}
-              height={600}
+              fill
+              style={{ objectFit: "cover" }}
+              sizes="(max-width: 768px) 100vw, 1200px"
             />
           </motion.div>
         </div>
@@ -61,8 +63,8 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-4">Our North Star</h3>
               <p className="text-gray-300 leading-relaxed">
                 To shape creative work that’s meaningful, memorable, and made to
-                grow with you. Our focus is on building authentic identities that
-                are grounded in purpose and designed for impact.
+                grow with you. Our focus is on building authentic identities
+                that are grounded in purpose and designed for impact.
               </p>
             </div>
 
@@ -71,11 +73,11 @@ const About = () => {
               <p className="text-gray-300 leading-relaxed">
                 We lead with curiosity, collaborate openly, and create with
                 intention. Every project begins with listening — understanding
-                your goals, your audience, and your vision. Our approach balances
-                creativity and strategic thinking, ensuring each idea is both
-                beautiful and effective. With a culture of transparency and
-                adaptability, we treat each project like a true partnership —
-                guided by purpose, delivered with precision.
+                your goals, your audience, and your vision. Our approach
+                balances creativity and strategic thinking, ensuring each idea
+                is both beautiful and effective. With a culture of transparency
+                and adaptability, we treat each project like a true partnership
+                — guided by purpose, delivered with precision.
               </p>
             </div>
           </motion.div>
@@ -93,13 +95,15 @@ const About = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.2 * i, duration: 0.6 }}
+                className="relative w-full rounded-xl h-[500px]"
               >
                 <Image
                   src={src}
                   alt={`Detail ${i + 1}`}
-                  className="w-full object-cover rounded-xl h-[500px]"
-                  width={600}
-                  height={500}
+                  fill
+                  style={{ objectFit: "cover", borderRadius: "0.75rem" }} // rounded-xl = 12px ~ 0.75rem
+                  sizes="(max-width: 768px) 100vw, 600px"
+                  priority={i === 0} // optional: prioritize first image
                 />
               </motion.div>
             ))}

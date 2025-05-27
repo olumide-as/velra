@@ -14,6 +14,7 @@ import CookieConsent from "@/components/CookieConsent";
 import Script from "next/script";
 
 export const metadata = {
+    metadataBase: new URL('https://velra.co.uk'), // ✅ Your live base domain
   title: "Velra — Branding, Web Design & Strategy Studio",
   description:
     "Creative agency crafting bold branding, standout design, engaging websites, and smart digital marketing for modern startups and growing brands.",

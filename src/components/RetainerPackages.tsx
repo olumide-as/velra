@@ -59,7 +59,7 @@ const RetainerPackages: React.FC = () => {
     <section
       className="bg-white text-black py-20"
       style={{
-        backgroundImage: `url('/assets/retainersbg.png')`,
+        backgroundImage: `url('/assets/retainersbg.webp')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

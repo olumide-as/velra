@@ -47,7 +47,7 @@ const ServicesSection: React.FC = () => {
     <section
       className="bg-white text-white py-20"
       style={{
-        backgroundImage: `url('/assets/servicesbg.png')`,
+        backgroundImage: `url('/assets/servicesbg.webp')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

@@ -22,7 +22,7 @@ interface ServicesHeroType {
 }
 
 const servicesHero: ServicesHeroType = {
-  background: '/assets/servicesherobg.png', // Updated to a string path
+  background: '/assets/servicesherobg.webp', // Updated to a string path
   eyebrow: 'Our Services',
   heading:
     "We don’t do one-size-fits-all. \nWe listen, we create, we obsess over the details — so every project feels custom-made, because it is.",

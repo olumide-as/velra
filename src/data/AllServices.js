@@ -7,8 +7,8 @@ export const AllServices = [
     subtext:
       "At Velra, we craft brands that are more than visuals — they’re personalities with purpose. Built to be remembered, built to connect.",
     category: "All Things Brand",
-    background: "/assets/servicesherobg.png",
-    bgImage: "/assets/servicesbg.png",
+    background: "/assets/servicesherobg.webp",
+    bgImage: "/assets/servicesbg.webp",
     services: [
       "Brand Strategy",
       "Brand Naming",
@@ -35,8 +35,8 @@ export const AllServices = [
     subtext:
       "Every layout, graphic, and detail is made to move people, not just please them.",
     category: "All Things Design",
-    background: "/assets/servicesherobg.png",
-    bgImage: "/assets/servicesbg.png",
+    background: "/assets/servicesherobg.webp",
+    bgImage: "/assets/servicesbg.webp",
     services: [
       "Brand Collateral Design",
       "Marketing & Advertising Design",
@@ -62,8 +62,8 @@ export const AllServices = [
     subtext:
       "In a world of endless scroll, we craft digital experiences that break through the noise and build real brand love, not just likes.",
     category: "All Things Marketing",
-    background: "/assets/servicesherobg.png",
-    bgImage: "/assets/servicesbg.png",
+    background: "/assets/servicesherobg.webp",
+    bgImage: "/assets/servicesbg.webp",
     services: [
       "Social Media Strategy",
       "Content Creation & Scheduling",
@@ -87,8 +87,8 @@ export const AllServices = [
     subtext:
       "We see web design as the sweet spot between logic and creativity — where user experience meets emotional impact.",
     category: "All Things Web",
-    background: "/assets/servicesherobg.png",
-    bgImage: "/assets/servicesbg.png",
+    background: "/assets/servicesherobg.webp",
+    bgImage: "/assets/servicesbg.webp",
     services: [
       "Website Strategy",
       "Wireframing & Prototyping",

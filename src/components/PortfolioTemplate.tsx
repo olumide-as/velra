@@ -28,7 +28,7 @@ const getMediaSrc = (input: string | { src: string }) =>
 // Helper to get poster image path for a video (replace extension with .png)
 const getPosterSrc = (videoSrc: string) => {
   if (!isVideo(videoSrc)) return "";
-  return videoSrc.replace(/\.(mp4|webm|mov)$/, ".png");
+  return videoSrc.replace(/\.(mp4|webm|mov)$/, ".webp");
 };
 
 const PortfolioTemplate: React.FC<Props> = ({ project }) => {

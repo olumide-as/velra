@@ -10,13 +10,13 @@ type ClientLogo = {
 
 const clientLogos: ClientLogo[] = [
   { src: "/assets/client1.svg", alt: "Client 1" },
-  { src: "/assets/client2.png", alt: "Client 2" },
-  { src: "/assets/client3.png", alt: "Client 3" },
+  { src: "/assets/client2.webp", alt: "Client 2" },
+  { src: "/assets/client3.webp", alt: "Client 3" },
   { src: "/assets/client4.svg", alt: "Client 4" },
-  { src: "/assets/client5.png", alt: "Client 5" },
-  { src: "/assets/client6.png", alt: "Client 6" },
-  { src: "/assets/client7.png", alt: "Client 7" },
-  { src: "/assets/client8.png", alt: "Client 8" },
+  { src: "/assets/client5.webp", alt: "Client 5" },
+  { src: "/assets/client6.webp", alt: "Client 6" },
+  { src: "/assets/client7.webp", alt: "Client 7" },
+  { src: "/assets/client8.webp", alt: "Client 8" },
 ];
 
 // Container animation controls staggering children
@@ -54,19 +54,20 @@ const Client: React.FC = () => {
           variants={containerVariants}
         >
           {clientLogos.map((logo, index) => (
-            <motion.div
-              key={index}
-              className="bg-[#0a0a0a] p-6 rounded-xl flex items-center justify-center"
-              variants={itemVariants}
-            >
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                className="h-20 object-contain grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
-                width={200}
-                height={200}
-              />
-            </motion.div>
+<motion.div
+  key={index}
+  className="bg-[#0a0a0a] p-6 rounded-xl flex items-center justify-center"
+  variants={itemVariants}
+>
+  <Image
+    src={logo.src}
+    alt={logo.alt}
+    className="h-20 object-contain grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
+    width={200}
+    height={200}
+    style={{ width: 'auto' }}
+  />
+</motion.div>
           ))}
         </motion.div>
       </div>

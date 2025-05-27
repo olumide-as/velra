@@ -29,7 +29,7 @@ const isVideo = (src: string) => {
 // Get poster image path for a video by replacing extension with .png
 const getPosterSrc = (videoSrc: string) => {
   if (!isVideo(videoSrc)) return '';
-  return videoSrc.replace(/\.(mp4|webm|ogg)$/, '.png');
+  return videoSrc.replace(/\.(mp4|webm|ogg)$/, '.webp');
 };
 
 const Portfolio = () => {
