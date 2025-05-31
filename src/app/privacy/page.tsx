@@ -17,7 +17,7 @@ const Privacy = () => {
       </Head>
 
       <HeroSection
-        background="/assets/servicesherobg.png"
+        background="/assets/servicesherobg.webp"
         eyebrow="Privacy Policy"
         heading="Your Data, Respected"
         subtext="We value transparency. Here's how we handle your personal information."
