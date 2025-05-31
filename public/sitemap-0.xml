@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://velra.co.uk</loc><lastmod>2025-05-27T21:29:21.874Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://velra.co.uk/services</loc><lastmod>2025-05-27T21:29:21.875Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://velra.co.uk/about</loc><lastmod>2025-05-27T21:29:21.875Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://velra.co.uk/terms</loc><lastmod>2025-05-27T21:29:21.875Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://velra.co.uk/portfolio</loc><lastmod>2025-05-27T21:29:21.875Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://velra.co.uk/privacy</loc><lastmod>2025-05-27T21:29:21.875Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://velra.co.uk/contact</loc><lastmod>2025-05-27T21:29:21.875Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://velra.co.uk</loc><lastmod>2025-05-31T01:21:11.039Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://velra.co.uk/portfolio</loc><lastmod>2025-05-31T01:21:11.040Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://velra.co.uk/privacy</loc><lastmod>2025-05-31T01:21:11.040Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://velra.co.uk/terms</loc><lastmod>2025-05-31T01:21:11.040Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://velra.co.uk/about</loc><lastmod>2025-05-31T01:21:11.040Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://velra.co.uk/contact</loc><lastmod>2025-05-31T01:21:11.040Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://velra.co.uk/services</loc><lastmod>2025-05-31T01:21:11.040Z</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

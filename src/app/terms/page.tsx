@@ -213,7 +213,7 @@ const Terms = () => {
               Proper credit should be provided on final works when applicable.
             </li>
             <li>
-              Velra will include its registered name in the footer of the client's website by default, unless a different arrangement is agreed upon in writing.
+              Velra will include its registered name in the footer of the client&apos;s website by default, unless a different arrangement is agreed upon in writing.
             </li>
           </ul>
 
