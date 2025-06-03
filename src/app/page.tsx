@@ -71,15 +71,15 @@ const Home: React.FC = () => {
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
           />
           <div className="relative z-10 flex items-center w-full h-full bg-opacity-50">
-            <div className="w-full max-w-7xl mx-auto px-6 md:px-20">
+            <div className="w-full max-w-6xl mx-auto px-6 md:px-20">
               <div className="max-w-5xl">
                 <motion.h1
-                  className="text-5xl md:text-6xl font-light text-[#DC143C] mb-4"
+                  className="text-5xl md:text-6xl font-bold text-[#DC143C] mb-4"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
                 >
-                  We brand. We build. We boost
+                  Your Business Deserves <br/> to Look Good.
                 </motion.h1>
 
                 <motion.p
@@ -88,8 +88,7 @@ const Home: React.FC = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.8 }}
                 >
-                  More than a creative partner — we’re your launchpad for
-                  branding, growth, and beyond.
+                  Logos, websites, and everything you need to look pro and grow strong.
                 </motion.p>
 
                 <motion.a
@@ -148,8 +147,8 @@ const Home: React.FC = () => {
               <h2 className="text-sm uppercase text-[#DC143C] mb-3">
                 About Velra
               </h2>
-              <h3 className="text-2xl md:text-3xl mb-12 text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
-                Vibes. Vision. Voice.
+              <h3 className="text-2xl md:text-3xl mb-12 font-bold text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
+                Who We Are & Why We Care
               </h3>
               <p className="mb-5 text-gray-800">
                 From brand identities to immersive experiences, everything we do
@@ -188,7 +187,7 @@ const Home: React.FC = () => {
     </motion.h2>
 
     <motion.h3
-      className="text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"
+      className="text-2xl md:text-3xl mb-12 border-b-2 font-bold border-[#DC143C] inline-block pb-1"
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.1 }}
@@ -329,13 +328,13 @@ const Home: React.FC = () => {
             </motion.h2>
 
             <motion.h3
-              className="text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"
+              className="font-bold text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              What Our Clients Say
+              Kind Words from Cool Clients
             </motion.h3>
 
             <Swiper

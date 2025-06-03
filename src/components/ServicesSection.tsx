@@ -60,8 +60,8 @@ const ServicesSection: React.FC = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-sm uppercase text-[#DC143C] mb-3">What we do</h2>
-          <h3 className="text-2xl md:text-3xl mb-12 text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
-            The Velra Vibe, Explained
+          <h3 className="text-2xl md:text-3xl mb-12 font-bold text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
+            The Good Stuff We’re Known For
           </h3>
         </motion.div>
 

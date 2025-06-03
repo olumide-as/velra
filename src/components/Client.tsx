@@ -45,8 +45,8 @@ const Client: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto md:px-20">
         <h2 className="text-sm uppercase text-[#DC143C] mb-3">Clients</h2>
-        <h3 className="text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1">
-          Made with, Made for
+        <h3 className="font-bold text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1">
+          Built for Folks Like You
         </h3>
 
         <motion.div

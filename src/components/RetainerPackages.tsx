@@ -71,8 +71,8 @@ const RetainerPackages: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-sm uppercase text-[#DC143C] mb-3">Retainer Packages</h2>
-          <h3 className="text-2xl md:text-3xl mb-12 text-[#040404] inline-block border-b-2 border-[#DC143C] pb-1">
+          <h2 className="text-sm uppercase text-[#DC143C] mb-3 ">Retainer Packages</h2>
+          <h3 className="font-bold text-2xl md:text-3xl mb-12 text-[#040404] inline-block border-b-2 border-[#DC143C] pb-1">
             Your Creative Dream Team
           </h3>
         </motion.div>

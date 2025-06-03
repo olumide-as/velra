@@ -5,5 +5,5 @@ module.exports = {
   changefreq: 'monthly',
   priority: 0.7,
   sitemapSize: 5000,
-  exclude: ['/admin'], // optional
+  exclude: ['/admin', '/terms', '/privacy'], // optional
 };

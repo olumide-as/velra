@@ -65,7 +65,7 @@ const Portfolio = () => {
         </motion.h1>
 
         <motion.h2
-          className="text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"
+          className="font-bold text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
@@ -104,10 +104,10 @@ const Portfolio = () => {
                   height={600}
                 />
               )}
-              <h3 className="mt-8 text-sm md:text-sm text-[#DC143C] uppercase">
+              <h3 className="font-bold mt-8 text-sm md:text-sm text-[#DC143C] uppercase">
                 {project.title}
               </h3>
-              <p className="text-md md:text-lg">{project.subtitle}</p>
+              <p className="font-bold text-md md:text-lg">{project.subtitle}</p>
             </motion.a>
           ))}
         </div>

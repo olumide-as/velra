@@ -37,7 +37,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         viewport={{ once: true }}
       >
         <motion.h1
-          className="text-sm uppercase text-[#DC143C] mb-3"
+          className="text-sm font-bold uppercase text-[#DC143C] mb-3"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
@@ -46,7 +46,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </motion.h1>
 
         <motion.h2
-          className="text-2xl md:text-3xl lg:text-4xl font-light leading-snug"
+          className="text-2xl md:text-3xl lg:text-4xl font-bold leading-snug"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.7 }}
