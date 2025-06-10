@@ -44,8 +44,8 @@ const Client: React.FC = () => {
       variants={containerVariants}
     >
       <div className="max-w-7xl mx-auto md:px-20">
-        <h2 className="text-sm uppercase text-[#DC143C] mb-3">Clients</h2>
-        <h3 className="font-bold text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1">
+        <h2 className="text-sm uppercase font-black text-[#DC143C] mb-3">Clients</h2>
+        <h3 className="font-black text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1">
           Built for Folks Like You
         </h3>
 

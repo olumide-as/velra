@@ -78,8 +78,8 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
         viewport={{ once: true }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-20">
-          <p className="text-sm uppercase text-[#DC143C] mb-3">Portfolio</p>
-          <h2 className="text-2xl md:text-3xl font-bold mb-12 border-b-2 border-[#DC143C] pb-1">
+          <p className="text-sm uppercase font-black text-[#DC143C] mb-3">Portfolio</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-12 border-b-2 border-[#DC143C] pb-1">
             {title}
           </h2>
 

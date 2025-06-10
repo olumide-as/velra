@@ -49,8 +49,8 @@ const ServicesTemplate: React.FC<Props> = ({ service }) => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm uppercase text-[#DC143C] mb-3">{category}</p>
-            <h2 className="font-bold text-2xl md:text-3xl mb-12 text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
+            <p className="text-sm uppercase font-black text-[#DC143C] mb-3">{category}</p>
+            <h2 className="font-black text-2xl md:text-3xl mb-12 text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
               What’s Included
             </h2>
           </motion.div>

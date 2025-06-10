@@ -19,7 +19,7 @@ const NoPage: React.FC = () => {
       <div className="min-h-screen bg-[#040404] flex items-center justify-center py-20 px-6">
         <div className="max-w-7xl mx-auto text-center space-y-8">
           <Image
-            src="/assets/nopagebg.svg" // Direct URL from public folder
+            src="/assets/nopagebg.wep" // Direct URL from public folder
             alt="Page not found"
             className="mx-auto w-full max-w-md"
             width={600}

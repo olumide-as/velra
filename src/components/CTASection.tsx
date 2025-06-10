@@ -22,7 +22,7 @@ const CTASection: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto space-y-6 md:px-20">
         <motion.h2 
-          className="text-5xl md:text-7xl font-light text-left text-[#DC143C]"
+          className="text-5xl md:text-6xl font-normal text-left text-[#DC143C]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.8, ease: "easeOut" }}

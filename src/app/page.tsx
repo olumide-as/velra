@@ -72,9 +72,9 @@ const Home: React.FC = () => {
           />
           <div className="relative z-10 flex items-center w-full h-full bg-opacity-50">
             <div className="w-full max-w-6xl mx-auto px-6 md:px-20">
-              <div className="max-w-5xl">
+              <div className="max-w-6xl">
                 <motion.h1
-                  className="text-5xl md:text-6xl font-bold text-[#DC143C] mb-4"
+                  className="text-5xl md:text-7xl font-black text-[#DC143C] mb-4"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
@@ -144,11 +144,11 @@ const Home: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h2 className="text-sm uppercase text-[#DC143C] mb-3">
+              <h2 className="text-sm font-black uppercase text-[#DC143C] mb-3">
                 About Velra
               </h2>
-              <h3 className="text-2xl md:text-3xl mb-12 font-bold text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
-                Who We Are & Why We Care
+              <h3 className="text-2xl md:text-3xl mb-12 font-black text-gray-800 inline-block border-b-2 border-[#DC143C] pb-1">
+                What Drives Us
               </h3>
               <p className="mb-5 text-gray-800">
                 From brand identities to immersive experiences, everything we do
@@ -177,7 +177,7 @@ const Home: React.FC = () => {
 <section className="bg-[#040404] text-white py-20">
   <div className="max-w-7xl mx-auto px-6 md:px-20">
     <motion.h2
-      className="text-sm uppercase text-[#DC143C] mb-3"
+      className="text-sm uppercase font-black text-[#DC143C] mb-3"
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -187,13 +187,13 @@ const Home: React.FC = () => {
     </motion.h2>
 
     <motion.h3
-      className="text-2xl md:text-3xl mb-12 border-b-2 font-bold border-[#DC143C] inline-block pb-1"
+      className="text-2xl md:text-3xl mb-12 border-b-2 font-black border-[#DC143C] inline-block pb-1"
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.1 }}
       viewport={{ once: true }}
     >
-      Cool stuff we’ve cooked up
+      Made by Velra
     </motion.h3>
 
     <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-x-10 gap-y-16">
@@ -243,10 +243,10 @@ const Home: React.FC = () => {
                   height={800}
                 />
               )}
-              <h3 className="mt-8 text-sm text-[#DC143C] uppercase font-semibold">
+              <h3 className="mt-8 text-sm text-[#DC143C]  font-black">
                 {project.title}
               </h3>
-              <p className="text-md md:text-lg">{project.subtitle}</p>
+              <p className="text-md md:text-lg font-bold">{project.subtitle}</p>
             </motion.a>
           ))}
         </div>
@@ -297,10 +297,10 @@ const Home: React.FC = () => {
                 height={800}
               />
             )}
-            <h3 className="mt-8 text-sm text-[#DC143C] uppercase font-semibold">
-              {project.title}
-            </h3>
-            <p className="text-md md:text-lg">{project.subtitle}</p>
+              <h3 className="mt-8 text-sm text-[#DC143C]  font-black">
+                {project.title}
+              </h3>
+              <p className="text-md md:text-lg font-bold">{project.subtitle}</p>
           </motion.a>
         ))}
       </motion.div>
@@ -318,7 +318,7 @@ const Home: React.FC = () => {
         <section className="bg-[#040404] text-white py-24 px-6">
           <div className="max-w-7xl mx-auto md:px-20">
             <motion.h2
-              className="text-sm uppercase text-[#DC143C] mb-3"
+              className="text-sm uppercase font-black text-[#DC143C] mb-3"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -328,7 +328,7 @@ const Home: React.FC = () => {
             </motion.h2>
 
             <motion.h3
-              className="font-bold text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"
+              className="font-black text-2xl md:text-3xl mb-12 border-b-2 border-[#DC143C] inline-block pb-1"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}

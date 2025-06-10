@@ -60,7 +60,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             <div className="md:w-1/2 mb-12 md:mb-0">
-              <h3 className="text-2xl font-semibold mb-4">Our North Star</h3>
+              <h3 className="text-2xl font-black mb-4">Our North Star</h3>
               <p className="text-gray-300 leading-relaxed">
                 To shape creative work that’s meaningful, memorable, and made to
                 grow with you. Our focus is on building authentic identities
@@ -69,7 +69,7 @@ const About = () => {
             </div>
 
             <div className="md:w-1/2">
-              <h3 className="text-2xl font-semibold mb-4">The Way We Work</h3>
+              <h3 className="text-2xl font-black mb-4">The Way We Work</h3>
               <p className="text-gray-300 leading-relaxed">
                 We lead with curiosity, collaborate openly, and create with
                 intention. Every project begins with listening — understanding

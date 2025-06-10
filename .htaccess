@@ -1,0 +1,15 @@
+# 🔁 Begin Redirect Rules
+RewriteEngine On
+# 🔁 Force HTTPS for all domains
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# 🔁 Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+# 🔁 Redirect all domains to velra.co.uk
+RewriteCond %{HTTP_HOST} !^velra\.co\.uk$ [NC]
+RewriteRule ^(.*)$ https://velra.co.uk/$1 [L,R=301]
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
