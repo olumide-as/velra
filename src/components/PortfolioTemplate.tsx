@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
@@ -45,6 +45,7 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
     whippedUp,
     images,
     testimonial,
+    website,
   } = project;
 
   const relatedProjects = AllPortfolios.filter((p) => p.slug !== slug);
@@ -78,7 +79,9 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
         viewport={{ once: true }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-20">
-          <p className="text-sm uppercase font-black text-[#DC143C] mb-3">Portfolio</p>
+          <p className="text-sm uppercase font-black text-[#DC143C] mb-3">
+            Portfolio
+          </p>
           <h2 className="text-2xl md:text-3xl font-black mb-12 border-b-2 border-[#DC143C] pb-1">
             {title}
           </h2>
@@ -100,6 +103,22 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
               <div className="border-t border-gray-600 pt-4">
                 <p className="text-white font-semibold mb-1">Scope of Work</p>
                 <p>{services}</p>
+              </div>
+              <div className="border-t border-gray-600 pt-4">
+                <p className="text-white font-semibold mb-1">Website</p>
+                <a
+                  href={
+                    website.startsWith("http://") ||
+                    website.startsWith("https://")
+                      ? website
+                      : `https://${website}`
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#DC143C] hover:underline break-all"
+                >
+                  {website}
+                </a>
               </div>
             </div>
           </div>
@@ -182,7 +201,9 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
             <blockquote className="italic text-lg md:text-xl text-gray-300 leading-relaxed">
               “{testimonial.quote}”
             </blockquote>
-            <p className="mt-4 text-[#DC143C] font-semibold">— {testimonial.name}</p>
+            <p className="mt-4 text-[#DC143C] font-semibold">
+              — {testimonial.name}
+            </p>
           </div>
         </motion.section>
       )}
@@ -194,7 +215,9 @@ const PortfolioTemplate: React.FC<Props> = ({ project }) => {
           {...fadeIn}
           viewport={{ once: true }}
         >
-          <h3 className="text-white text-2xl md:text-3xl mb-8">More Projects</h3>
+          <h3 className="text-white text-2xl md:text-3xl mb-8">
+            More Projects
+          </h3>
 
           <button
             onClick={() => scroll("left")}

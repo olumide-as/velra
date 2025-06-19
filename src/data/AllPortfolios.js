@@ -5,6 +5,7 @@ export const AllPortfolios = [
     partner: "Akande & Akande Chambers",
     sector: "Legal Services",
     services: "Branding · Website",
+    website: "www.akandeandakandechambers.com",
     subtitle: "Legal Services / Branding, Website",
     heroVideo: "/assets/akandebg.webm",
     brief:
@@ -30,6 +31,7 @@ export const AllPortfolios = [
     partner: "Extrude Solutions",
     sector: "Engineering",
     services: "Website",
+    website: "www.extrudesolutions.com",
     subtitle: "Engineering / Website",
     heroVideo: "/assets/extrudebg.webm",
     brief:
@@ -55,6 +57,7 @@ export const AllPortfolios = [
     partner: "IME Assets",
     sector: "Infrastructure Management",
     services: "Website · Promotional Video",
+    website: "www.imeassets.com",
     subtitle: "Infrastructure / Website, Video",
     heroVideo: "/assets/imebg.webm",
     brief:
@@ -79,6 +82,7 @@ export const AllPortfolios = [
     title: "La Peritum Law Practice",
     partner: "La Peritum Law Practice",
     sector: "Legal Services",
+    website: "www.laperitum.com",
     services: "Rebranding · Website · Social Media Marketing · Design",
     subtitle: "Legal Services / Rebranding, Website, Social Media",
     heroVideo: "/assets/laperitumbg.webm",
@@ -105,6 +109,7 @@ export const AllPortfolios = [
     partner: "Michael Angelo Media",
     sector: "Outdoor Advertising",
     services: "Branding · Website · Social Media Marketing · Design",
+    website: "www.ma-media.com.ng",
     subtitle: "Advertising / Branding, Website, Social Media",
     heroVideo: "/assets/mamediabg.webm",
     brief:
@@ -130,6 +135,7 @@ export const AllPortfolios = [
     partner: "Nigerian Mixed Martial Arts Federation (NMMAF)",
     sector: "Sports Entertainment",
     services: "Branding · Website (CMS) · Social Media Marketing · Design",
+    website: "www.nmmaf.com",
     subtitle: "Sports / Branding, CMS, Social Media",
     heroVideo: "/assets/nmmafbg.webm",
     brief:
@@ -155,6 +161,7 @@ export const AllPortfolios = [
     partner: "Quadloop",
     sector: "Renewable Energy",
     services: "Website",
+    website: "www.quadloop.africa",
     subtitle: "Clean Tech / Website",
     heroVideo: "/assets/quadloopbg.webm",
     brief:

@@ -15,11 +15,11 @@ import Script from "next/script";
 
 export const metadata = {
     metadataBase: new URL('https://velra.co.uk'), // ✅ Your live base domain
-  title: "Velra — Branding, Web Design & Strategy Studio",
+  title: "Velra Agency — Branding, Web Design & Strategy Studio",
   description:
     "Creative agency crafting bold branding, standout design, engaging websites, and smart digital marketing for modern startups and growing brands.",
   openGraph: {
-    title: "Velra — Branding, Web Design & Strategy Studio",
+    title: "Velra Agency — Branding, Web Design & Strategy Studio",
     description: "Creative branding, design, and digital growth made bold.",
     url: "https://velra.co.uk",
     siteName: "Velra",
@@ -35,7 +35,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Velra — Branding, Web Design & Strategy Studio",
+    title: "Velra Agency — Branding, Web Design & Strategy Studio",
     description: "Creative branding, design, and digital growth made bold.",
     images: ["/assets/meta-image.png"],
   },

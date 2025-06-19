@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import About from "./about";
 
 export const metadata: Metadata = {
-  title: "About Us | Velra",
+  title: "About Us | Velra Agency",
   description:
     "Discover Velra: where strategy meets style. We help businesses grow through intentional branding, digital creativity, and collaborative partnerships.",
     alternates: {

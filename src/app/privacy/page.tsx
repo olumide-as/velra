@@ -4,7 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import CTASection from '@/components/CTASection';
 
 export const metadata = {
-  title: 'Privacy Policy | Velra',
+  title: 'Privacy Policy | Velra Agency',
   description: 'How Velra collects, uses, and protects your personal information when you use our services or website.',
 };
 

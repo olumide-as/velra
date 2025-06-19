@@ -4,7 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
 
 export const metadata = {
-  title: "Terms & Conditions | Velra",
+  title: "Terms & Conditions | Velra Agency",
   description:
     "Read our Terms and Conditions to understand our working process, service rules, and legal obligations.",
 };

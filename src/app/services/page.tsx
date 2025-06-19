@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Services from "./services";
 
 export const metadata: Metadata = {
-  title: "Our Services | Velra",
+  title: "Our Services | Velra Agency",
   description:
     "Explore our creative services — from branding and design to web development and digital marketing. Custom solutions built for your brand’s success.",
   alternates: {
