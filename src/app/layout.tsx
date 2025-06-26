@@ -14,18 +14,35 @@ import CookieConsent from "@/components/CookieConsent";
 import Script from "next/script";
 
 export const metadata = {
-    metadataBase: new URL('https://velra.co.uk'), // ✅ Your live base domain
+  metadataBase: new URL("https://velra.co.uk"),
   title: "Velra Agency — Branding, Web Design & Strategy Studio",
   description:
     "Creative agency crafting bold branding, standout design, engaging websites, and smart digital marketing for modern startups and growing brands.",
+  keywords: [
+    "branding",
+    "brand identity",
+    "web design",
+    "creative agency",
+    "design studio",
+    "digital marketing",
+    "Velra",
+    "startup branding",
+    "UI/UX design",
+    "modern web design",
+    "strategy agency",
+    "graphic design",
+    "logo design",
+    "marketing design",
+    "content strategy"
+  ],
   openGraph: {
     title: "Velra Agency — Branding, Web Design & Strategy Studio",
     description: "Creative branding, design, and digital growth made bold.",
     url: "https://velra.co.uk",
-    siteName: "Velra",
+    siteName: "Velra Agency",
     images: [
       {
-        url: "/assets/meta-image.png", // ✅ Put this image in /public/assets/
+        url: "/assets/meta-image.png",
         width: 1200,
         height: 630,
         alt: "Velra branding preview",
@@ -67,7 +84,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="scroll-smooth bg-[#040404]">
         <GoogleAnalytics />
         <Navbar />
-        {children} {/* This is where your route content will be rendered */}
+        {children}
         <Footer />
         <CustomCursor />
         <BottomScroller />

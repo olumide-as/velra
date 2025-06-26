@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
         custom={3}
         className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 space-y-3 md:space-y-0"
       >
-        <span>© {year} Velra</span>
+        <span>© {year} Velra | Registered in England & Wales No. 16446246</span>
         <div className="flex gap-6">
           <a href="/terms" className="hover:text-white transition">
             T&Cs
