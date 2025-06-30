@@ -1,8 +1,10 @@
-'use client';
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
 import { FaInstagram, FaTiktok, FaXTwitter } from "react-icons/fa6";
+import Image from "next/image";
+
 
 const Footer: React.FC = () => {
   const year: number = new Date().getFullYear();
@@ -39,19 +41,35 @@ const Footer: React.FC = () => {
         </motion.div>
 
         {/* Column 2: Contact + Socials */}
-        <motion.div variants={fadeUp} custom={1} className="space-y-4 order-last lg:order-none">
+        <motion.div
+          variants={fadeUp}
+          custom={1}
+          className="space-y-4 order-last lg:order-none"
+        >
           <h3 className="text-lg md:text-xl">Say Hey, Don&apos;t be Shy</h3>
           <div className="text-sm">
             <p>hello@velra.co.uk</p>
             <p>+44 203 432 2577</p>
             <div className="flex gap-4 pt-2">
-              <a href="https://www.instagram.com/madebyvelra/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.instagram.com/madebyvelra/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaInstagram className="w-5 h-5 hover:text-[#DC143C] transition" />
               </a>
-              <a href="https://www.tiktok.com/@madebyvelra" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.tiktok.com/@madebyvelra"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaTiktok className="w-5 h-5 hover:text-[#DC143C] transition" />
               </a>
-              <a href="https://x.com/madebyvelra" target="_blank" rel="noreferrer">
+              <a
+                href="https://x.com/madebyvelra"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaXTwitter className="w-5 h-5 hover:text-[#DC143C] transition" />
               </a>
             </div>
@@ -109,7 +127,23 @@ const Footer: React.FC = () => {
             Privacy
           </a>
         </div>
+      {/* Trustpilot Widget */}
+      <a
+        href="https://uk.trustpilot.com/review/velra.co.uk"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-white p-2 rounded-lg"
+      >
+        <Image
+          src="/assets/trustpilot.png"
+          alt="Trustpilot"
+          width={100}
+          height={40}
+          className="object-contain"
+        />
+      </a>
       </motion.div>
+
     </motion.footer>
   );
 };
